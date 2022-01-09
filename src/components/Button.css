@@ -3,35 +3,36 @@
 }
 
 .btn {
-	padding: 8px 20px;
 	border-radius: 2px;
-	outline: none;
 	border: none;
 	cursor: pointer;
+	outline: none;
+	padding: 8px 20px;
 }
 
 .btn--primary {
 	background-color: var(--primary);
-	color: rgb(81, 152, 206);
 	border: 1px solid var(--primary);
+	color: rgb(81, 152, 206);
 }
 
 .btn--outline {
 	background-color: transparent;
-	color: rgb(81, 152, 206);
-	padding: 8px 20px;
 	border: 1px solid var(--primary);
+	color: rgb(81, 152, 206);
+	font-size: 1.3rem;
+	padding: 8px 20px;
 	transition: all 0.3s ease-out;
 }
 
 .btn--medium {
-	padding: 8px 20px;
 	font-size: 20px;
+	padding: 8px 20px;
 }
 
 .btn--large {
-	padding: 12px 26px;
 	font-size: 20px;
+	padding: 12px 26px;
 }
 
 .btn--medium:hover,
