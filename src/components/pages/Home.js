@@ -1,12 +1,12 @@
 import React from "react";
-import Main from "../Main";
+import MainPrimary from "../MainPrimary";
 import Cards from "../Cards";
 import PrimaryFooter from "../PrimaryFooter";
 
 export default function Home() {
 	return (
 		<>
-			<Main />
+			<MainPrimary />
 			<Cards />
 			<PrimaryFooter />
 		</>

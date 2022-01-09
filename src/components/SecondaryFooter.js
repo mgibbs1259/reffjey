@@ -54,7 +54,9 @@ export default function SecondaryFooter() {
 							reffjey
 						</Link>
 					</div>
-					<div className="website-rights">REFFJEY © 2022</div>
+					<div className="website-rights">
+						REFFJEY © {new Date().getFullYear()}
+					</div>
 				</div>
 			</section>
 		</div>

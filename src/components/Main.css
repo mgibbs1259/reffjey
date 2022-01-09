@@ -8,13 +8,6 @@
 	width: 100%;
 }
 
-.main-section-container > h1 {
-	align-items: center;
-	color: #fff;
-	font-size: 6rem;
-	padding-top: 10rem;
-}
-
 .main-background-image {
 	animation: zoom-in-zoom-out 40s ease infinite;
 	height: 100%;

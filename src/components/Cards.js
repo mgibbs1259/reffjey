@@ -5,7 +5,7 @@ import "./Cards.css";
 export default function Cards() {
 	return (
 		<div className="cards">
-			<h1>Alive Again - EP</h1>
+			<h1>Alive Again</h1>
 			<div align="center">
 				<iframe
 					title="Reffjey Spotify"
