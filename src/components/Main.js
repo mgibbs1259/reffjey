@@ -10,6 +10,7 @@ export default function Main() {
 				src="/images/the-beautiful-sound-of-anything.jpg"
 				alt="reffjey"
 			/>
+			<h1>the beautiful sound of anything</h1>
 		</div>
 	);
 }

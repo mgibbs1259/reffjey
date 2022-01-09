@@ -9,16 +9,10 @@
 }
 
 .main-section-container > h1 {
+	align-items: center;
 	color: #fff;
-	font-size: 90px;
-	margin-top: 20px;
-}
-
-.main-section-container > h2 {
-	color: #fff;
-	font-size: 3rem;
-	margin-top: 25px;
-	text-align: center;
+	font-size: 6rem;
+	padding-top: 10rem;
 }
 
 .main-background-image {
