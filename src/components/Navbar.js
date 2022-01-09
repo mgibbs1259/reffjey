@@ -27,56 +27,59 @@ export default function Navbar() {
 	return (
 		<>
 			<nav className="navbar">
-				<div className="navbar-container">
-					<Link
-						to="/"
-						className="navbar-logo"
-						onClick={closeMobileMenu}
-					>
-						reffjey
-					</Link>
-					<div className="menu-icon" onClick={handleClick}>
-						<i
-							className={
-								click ? "fas fa-times" : "fas fa-bars"
-							}
-						/>
-					</div>
-					<ul className={click ? "nav-menu active" : "nav-menu"}>
-						<li className="nav-item">
-							<Link
-								to="/tour"
-								className="nav-links"
-								onClick={closeMobileMenu}
-							>
-								Tour
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link
-								to="/merch"
-								className="nav-links"
-								onClick={closeMobileMenu}
-							>
-								Merch
-							</Link>
-						</li>
-						<li>
-							<Link
-								to="/sign-up"
-								className="nav-links-mobile"
-								onClick={closeMobileMenu}
-							>
-								Sign Up
-							</Link>
-						</li>
-					</ul>
-					{button && (
-						<Button buttonStyle="btn--outline">
-							SIGN UP
-						</Button>
-					)}
+				<Link
+					to="/"
+					className="navbar-logo"
+					onClick={closeMobileMenu}
+				>
+					reffjey
+				</Link>
+				<div className="menu-icon" onClick={handleClick}>
+					<i
+						className={click ? "fas fa-times" : "fas fa-bars"}
+					/>
 				</div>
+				<ul className={click ? "nav-menu active" : "nav-menu"}>
+					<li className="nav-item">
+						<Link
+							to="/music"
+							className="nav-links"
+							onClick={closeMobileMenu}
+						>
+							Music
+						</Link>
+					</li>
+					<li className="nav-item">
+						<Link
+							to="/tour"
+							className="nav-links"
+							onClick={closeMobileMenu}
+						>
+							Tour
+						</Link>
+					</li>
+					<li className="nav-item">
+						<Link
+							to="/merch"
+							className="nav-links"
+							onClick={closeMobileMenu}
+						>
+							Merch
+						</Link>
+					</li>
+					<li>
+						<Link
+							to="/sign-up"
+							className="nav-links-mobile"
+							onClick={closeMobileMenu}
+						>
+							Sign Up
+						</Link>
+					</li>
+				</ul>
+				{button && (
+					<Button buttonStyle="btn--outline">Sign Up</Button>
+				)}
 			</nav>
 		</>
 	);
