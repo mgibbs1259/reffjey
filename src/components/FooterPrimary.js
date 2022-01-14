@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "./Footer.css";
 
-export default function PrimaryFooter() {
+export default function FooterPrimary() {
 	return (
 		<div className="footer-container">
 			<section className="footer-subscription">

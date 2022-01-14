@@ -1,7 +1,16 @@
 h1 {
 	color: rgb(81, 152, 206);
-	font-size: 3rem;
-	padding-top: 60px;
+	font-size: 4rem;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	text-align: center;
+}
+
+h3 {
+	color: rgb(81, 152, 206);
+	font-size: 2rem;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	text-align: center;
 }
 
@@ -16,6 +25,9 @@ h1 {
 }
 
 .main-primary-background-image {
+	-moz-animation: zoom-in-zoom-out 40s ease infinite;
+	-o-animation: zoom-in-zoom-out 40s ease infinite;
+	-webkit-animation: zoom-in-zoom-out 40s ease infinite;
 	animation: zoom-in-zoom-out 40s ease infinite;
 	height: 100%;
 	object-fit: cover;

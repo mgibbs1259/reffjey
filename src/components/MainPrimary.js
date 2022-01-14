@@ -8,7 +8,7 @@ export default function MainPrimary() {
 			<img
 				className="main-primary-background-image"
 				src="/images/the-beautiful-sound-of-anything.jpg"
-				alt="reffjey"
+				alt=""
 			/>
 		</div>
 	);
