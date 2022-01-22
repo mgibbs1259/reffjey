@@ -1,5 +1,5 @@
 import React from "react";
-import SecondaryFooter from "../SecondaryFooter";
+import Footer from "../Footer";
 import "./Tour.css";
 
 export default function Tour() {
@@ -9,7 +9,7 @@ export default function Tour() {
 				<video src="/videos/tour.mp4" autoPlay loop muted />
 				<h1>Tour Dates Coming Soon</h1>
 			</div>
-			<SecondaryFooter />
+			<Footer />
 		</>
 	);
 }

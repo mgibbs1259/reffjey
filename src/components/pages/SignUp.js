@@ -1,6 +1,6 @@
 import React from "react";
 import Subscribe from "../Subscribe";
-import SecondaryFooter from "../SecondaryFooter";
+import Footer from "../Footer";
 import "./SignUp.css";
 
 export default function SignUp() {
@@ -10,7 +10,7 @@ export default function SignUp() {
 				<h1>Sign Up for Email Updates</h1>
 				<Subscribe />
 			</div>
-			<SecondaryFooter />
+			<Footer />
 		</>
 	);
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import SecondaryFooter from "../SecondaryFooter";
+import Footer from "../Footer";
 import "./Merch.css";
 
 export default function Merch() {
@@ -9,7 +9,7 @@ export default function Merch() {
 				<video src="/videos/merch.mp4" autoPlay loop muted />
 				<h1>Merch Coming Soon</h1>
 			</div>
-			<SecondaryFooter />
+			<Footer />
 		</>
 	);
 }

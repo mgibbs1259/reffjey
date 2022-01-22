@@ -1,5 +1,4 @@
-{
-	/* <div className="main-section-container">
+/* <div className="main-section-container">
 	<video src="/videos/home.mp4" autoPlay loop muted />
 	<h1>laurels</h1>
 	<iframe
@@ -12,4 +11,3 @@
 		allow="encrypted-media"
 	></iframe>
 </div>; */
-}
