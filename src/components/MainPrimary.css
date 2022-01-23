@@ -23,6 +23,16 @@ h3 {
 }
 
 .main-primary-background-image {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+	height: 100%;
+	object-fit: cover;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+}
+
+.main-primary-background-image-animated {
 	-moz-animation: zoom-in-zoom-out 40s ease infinite;
 	-o-animation: zoom-in-zoom-out 40s ease infinite;
 	-webkit-animation: zoom-in-zoom-out 40s ease infinite;

@@ -1,15 +1,23 @@
 import React from "react";
-import "../App.css";
+import { motion } from "framer-motion/dist/framer-motion";
 import "./MainPrimary.css";
 
-export default function MainPrimary() {
+export default function MainPrimary(props) {
 	return (
 		<div className="main-primary-section-container">
-			<img
-				className="main-primary-background-image"
-				src="/images/the-beautiful-sound-of-anything.jpg"
-				alt=""
-			/>
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ duration: 4 }}
+				variants={{
+					visible: { opacity: 1 },
+					hidden: { opacity: 0 },
+				}}
+			>
+				<h1 style={{ color: "white" }}>{props.title}</h1>
+			</motion.div>
+			<img className={props.className} src={props.src} alt="" />
 		</div>
 	);
 }

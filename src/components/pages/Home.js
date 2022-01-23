@@ -6,7 +6,10 @@ import Footer from "../Footer";
 export default function Home() {
 	return (
 		<>
-			<MainPrimary />
+			<MainPrimary
+				src="/images/the-beautiful-sound-of-anything.jpg"
+				className="main-primary-background-image-animated"
+			/>
 			<MainSecondary />
 			<Footer />
 		</>
