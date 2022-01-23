@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
-import "./MainPrimary.css";
+import "./MainContainer.css";
 
-export default function MainPrimary(props) {
+export default function MainContainer(props) {
 	return (
 		<div className="main-primary-section-container">
 			<motion.div

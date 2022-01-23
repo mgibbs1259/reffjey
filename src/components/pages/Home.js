@@ -1,12 +1,12 @@
 import React from "react";
-import MainPrimary from "../MainPrimary";
+import MainContainer from "../MainContainer";
 import CurrentMusic from "../CurrentMusic";
 import Footer from "../Footer";
 
 export default function Home() {
 	return (
 		<>
-			<MainPrimary
+			<MainContainer
 				src="/images/the-beautiful-sound-of-anything-large.jpg"
 				className="main-primary-background-image-animated"
 			/>

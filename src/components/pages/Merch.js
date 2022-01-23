@@ -1,11 +1,11 @@
 import React from "react";
-import MainPrimary from "../MainPrimary";
+import MainContainer from "../MainContainer";
 import Footer from "../Footer";
 
 export default function Merch() {
 	return (
 		<>
-			<MainPrimary
+			<MainContainer
 				title="No Merch At This Time"
 				src="/images/100x.jpg"
 				className="main-primary-background-image"
