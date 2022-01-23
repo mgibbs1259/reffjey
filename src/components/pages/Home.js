@@ -1,16 +1,16 @@
 import React from "react";
 import MainPrimary from "../MainPrimary";
-import MainSecondary from "../MainSecondary";
+import CurrentMusic from "../CurrentMusic";
 import Footer from "../Footer";
 
 export default function Home() {
 	return (
 		<>
 			<MainPrimary
-				src="/images/the-beautiful-sound-of-anything.jpg"
+				src="/images/the-beautiful-sound-of-anything-large.jpg"
 				className="main-primary-background-image-animated"
 			/>
-			<MainSecondary />
+			<CurrentMusic />
 			<Footer />
 		</>
 	);

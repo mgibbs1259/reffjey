@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
-import "./MainSecondary.css";
+import "./Cards.css";
 
 function AnimateTrackTitle({ delay, value }) {
 	return (
@@ -19,7 +19,7 @@ function AnimateTrackTitle({ delay, value }) {
 	);
 }
 
-export default function MainSecondary() {
+export default function CurrentMusic() {
 	return (
 		<div className="cards">
 			<motion.div

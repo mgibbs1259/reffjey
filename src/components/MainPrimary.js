@@ -9,7 +9,7 @@ export default function MainPrimary(props) {
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true }}
-				transition={{ duration: 4 }}
+				transition={{ duration: 2 }}
 				variants={{
 					visible: { opacity: 1 },
 					hidden: { opacity: 0 },
