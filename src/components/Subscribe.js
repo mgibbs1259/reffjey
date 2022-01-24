@@ -16,7 +16,7 @@ export default function Subscribe(props) {
 				</form>
 				<div className="subscribe-button-container">
 					<button className="btn btn--outline subscribe-button">
-						Subscribe
+						Submit
 					</button>
 				</div>
 			</div>

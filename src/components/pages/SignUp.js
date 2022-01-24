@@ -1,18 +1,38 @@
 import React from "react";
-import MainContainer from "../MainContainer";
 import Subscribe from "../Subscribe";
 import Footer from "../Footer";
+import "../MainContainer.css";
 import "./SignUp.css";
 
 export default function SignUp() {
 	return (
 		<>
-			<MainContainer
-				title="Sign Up for Email Updates"
-				src="/images/untitled.jpg"
-				className="main-primary-background-image"
-			/>
-			<Subscribe />
+			<div className="main-primary-section-container">
+				<h1
+					style={{
+						color: "white",
+						paddingTop: "10vh",
+						fontSize: "80px",
+					}}
+				>
+					reffjey
+				</h1>
+				<h1
+					style={{
+						color: "white",
+						paddingTop: "85px",
+						fontSize: "60px",
+					}}
+				>
+					Sign Up for Email Updates
+				</h1>
+				<Subscribe />
+				<img
+					className="main-primary-background-image"
+					src="/images/untitled.jpg"
+					alt=""
+				/>
+			</div>
 			<Footer />
 		</>
 	);
