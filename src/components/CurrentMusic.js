@@ -32,7 +32,7 @@ export default function CurrentMusic() {
 					hidden: { opacity: 0 },
 				}}
 			>
-				<h1>the beautiful sound of anything</h1>
+				<h1>the beautiful sound of anything EP</h1>
 			</motion.div>
 			<div className="cards__container">
 				<div className="cards__wrapper">
