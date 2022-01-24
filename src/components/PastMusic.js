@@ -6,13 +6,25 @@ function CardItem(props) {
 	return (
 		<>
 			<li className="cards__item">
-				<a href={props.href} className="cards__item__img__box">
-					<img
-						src={props.src}
-						alt=""
-						className="cards__item__img"
-					/>
-				</a>
+				<motion.button
+					whileHover={{ scale: 1.1 }}
+					whileTap={{ scale: 1 }}
+					style={{
+						background: "white",
+						border: "white",
+						width: "90%",
+						paddingTop: "15px",
+						paddingBottom: "15px",
+					}}
+				>
+					<a href={props.href} className="cards__item__img__box">
+						<img
+							src={props.src}
+							alt=""
+							className="cards__item__img"
+						/>
+					</a>
+				</motion.button>
 			</li>
 		</>
 	);
@@ -21,18 +33,7 @@ function CardItem(props) {
 export default function PastMusic() {
 	return (
 		<div className="cards">
-			<motion.div
-				initial="hidden"
-				whileInView="visible"
-				viewport={{ once: true }}
-				transition={{ duration: 2 }}
-				variants={{
-					visible: { opacity: 1 },
-					hidden: { opacity: 0 },
-				}}
-			>
-				<h1>Singles and EPs</h1>
-			</motion.div>
+			<h1>Singles and EPs</h1>
 			<div className="cards__container">
 				<div className="cards__wrapper">
 					<ul className="cards__items">

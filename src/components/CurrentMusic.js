@@ -60,22 +60,22 @@ export default function CurrentMusic() {
 						</motion.div>
 						<div className="cards__item__text__box">
 							<AnimateTrackTitle
-								delay={2}
+								delay={1.2}
 								value={"can't let go anymore"}
 								className="cards__item__text"
 							></AnimateTrackTitle>
 							<AnimateTrackTitle
-								delay={3}
+								delay={2.2}
 								value={"floating to the surface"}
 								className="cards__item__text"
 							></AnimateTrackTitle>
 							<AnimateTrackTitle
-								delay={4}
+								delay={3.2}
 								value={"everything in light"}
 								className="cards__item__text"
 							></AnimateTrackTitle>
 							<AnimateTrackTitle
-								delay={5}
+								delay={4.2}
 								value={
 									"the beautiful sound of anything"
 								}
