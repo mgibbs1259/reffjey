@@ -1,15 +1,16 @@
 import React from "react";
-import SecondaryFooter from "../SecondaryFooter";
-import "./Tour.css";
+import MainContainer from "../MainContainer";
+import Footer from "../Footer";
 
 export default function Tour() {
 	return (
 		<>
-			<div className="tour-container">
-				<video src="/videos/tour.mp4" autoPlay loop muted />
-				<h1>Tour Dates Coming Soon</h1>
-			</div>
-			<SecondaryFooter />
+			<MainContainer
+				title="no tour dates at this time"
+				src="/images/100x.jpg"
+				className="main-primary-background-image"
+			/>
+			<Footer />
 		</>
 	);
 }

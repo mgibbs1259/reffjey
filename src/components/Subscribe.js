@@ -11,12 +11,12 @@ export default function Subscribe(props) {
 						className="subscribe-input"
 						name="email"
 						type="email"
-						placeholder="Email Address"
+						placeholder="email address"
 					/>
 				</form>
 				<div className="subscribe-button-container">
 					<button className="btn btn--outline subscribe-button">
-						Subscribe
+						submit
 					</button>
 				</div>
 			</div>

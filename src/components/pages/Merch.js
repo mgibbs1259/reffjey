@@ -1,15 +1,16 @@
 import React from "react";
-import SecondaryFooter from "../SecondaryFooter";
-import "./Merch.css";
+import MainContainer from "../MainContainer";
+import Footer from "../Footer";
 
 export default function Merch() {
 	return (
 		<>
-			<div className="merch-container">
-				<video src="/videos/merch.mp4" autoPlay loop muted />
-				<h1>Merch Coming Soon</h1>
-			</div>
-			<SecondaryFooter />
+			<MainContainer
+				title="no merch at this time"
+				src="/images/100x.jpg"
+				className="main-primary-background-image"
+			/>
+			<Footer />
 		</>
 	);
 }

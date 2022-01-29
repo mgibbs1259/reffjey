@@ -1,10 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from "./Button";
 import "./Footer.css";
 
-export default function SecondaryFooter() {
+export default function Footer() {
 	return (
 		<div className="footer-container">
+			<section className="footer-subscription">
+				<p className="footer-subscription-heading">
+					sign up for email updates
+				</p>
+				<div className="input-areas">
+					<form>
+						<input
+							className="footer-input"
+							name="email"
+							type="email"
+							placeholder="email address"
+						/>
+						<Button buttonStyle="btn--outline">
+							subscribe
+						</Button>
+					</form>
+				</div>
+			</section>
 			<section className="social-media">
 				<div className="social-media-wrap">
 					<div className="social-icons">
@@ -54,7 +73,9 @@ export default function SecondaryFooter() {
 							reffjey
 						</Link>
 					</div>
-					<div className="website-rights">REFFJEY © 2022</div>
+					<div className="website-rights">
+						REFFJEY © {new Date().getFullYear()}
+					</div>
 				</div>
 			</section>
 		</div>
