@@ -6,30 +6,30 @@ export default function Subscribe() {
 	return (
 		<>
 			<div className="subscribe-container">
-				<form
-					name="contact"
-					method="POST"
-					data-netlify="true"
-					netlify-honeypot="bot-field"
-				>
-					<p class="hidden">
+				<form name="contact" method="post">
+					<input
+						type="hidden"
+						name="form-name"
+						value="contact"
+					/>
+					<p>
 						<label>
-							Don’t fill this out if you’re human:{" "}
-							<input name="bot-field" />
+							<input
+								type="email"
+								name="email"
+								placeholder="email address"
+								className="subscribe-input"
+							/>
 						</label>
 					</p>
-					<input
-						className="subscribe-input"
-						placeholder="email address"
-						name="email"
-						type="email"
-						required
-					/>
-					<div className="subscribe-button-container">
-						<button className="btn btn--outline subscribe-button">
+					<p className="subscribe-button-container">
+						<button
+							type="submit"
+							className="btn btn--outline subscribe-button"
+						>
 							submit
 						</button>
-					</div>
+					</p>
 				</form>
 			</div>
 		</>
