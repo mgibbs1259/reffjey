@@ -7,6 +7,12 @@
 	padding-top: 40px;
 }
 
+.hide,
+.hidden {
+	display: none;
+	text-align: center;
+}
+
 .subscribe-form {
 	text-align: center;
 }
