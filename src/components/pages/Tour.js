@@ -6,7 +6,7 @@ export default function Tour() {
 	return (
 		<>
 			<MainContainer
-				title="No Tour Dates At This Time"
+				title="no tour dates at this time"
 				src="/images/100x.jpg"
 				className="main-primary-background-image"
 			/>

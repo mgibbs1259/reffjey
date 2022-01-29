@@ -46,7 +46,7 @@ export default function Navbar() {
 							className="nav-links"
 							onClick={closeMobileMenu}
 						>
-							Music
+							music
 						</Link>
 					</li>
 					<li className="nav-item">
@@ -55,7 +55,7 @@ export default function Navbar() {
 							className="nav-links"
 							onClick={closeMobileMenu}
 						>
-							Tour
+							tour
 						</Link>
 					</li>
 					<li className="nav-item">
@@ -64,7 +64,7 @@ export default function Navbar() {
 							className="nav-links"
 							onClick={closeMobileMenu}
 						>
-							Merch
+							merch
 						</Link>
 					</li>
 					<li>
@@ -73,12 +73,12 @@ export default function Navbar() {
 							className="nav-links-mobile"
 							onClick={closeMobileMenu}
 						>
-							Sign Up
+							sign up
 						</Link>
 					</li>
 				</ul>
 				{button && (
-					<Button buttonStyle="btn--outline">Sign Up</Button>
+					<Button buttonStyle="btn--outline">sign up</Button>
 				)}
 			</nav>
 		</>

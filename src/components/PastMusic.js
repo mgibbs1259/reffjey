@@ -33,7 +33,7 @@ function CardItem(props) {
 export default function PastMusic() {
 	return (
 		<div className="cards">
-			<h1>Singles and EPs</h1>
+			<h1>singles and EPs</h1>
 			<div className="cards__container">
 				<div className="cards__wrapper">
 					<ul className="cards__items">

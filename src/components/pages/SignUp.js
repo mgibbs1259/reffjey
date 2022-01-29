@@ -2,7 +2,6 @@ import React from "react";
 import Subscribe from "../Subscribe";
 import Footer from "../Footer";
 import "../MainContainer.css";
-import "./SignUp.css";
 
 export default function SignUp() {
 	return (
@@ -24,7 +23,7 @@ export default function SignUp() {
 						fontSize: "60px",
 					}}
 				>
-					Sign Up for Email Updates
+					sign up for email updates
 				</h1>
 				<Subscribe />
 				<img

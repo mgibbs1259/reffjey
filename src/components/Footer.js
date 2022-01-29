@@ -8,7 +8,7 @@ export default function Footer() {
 		<div className="footer-container">
 			<section className="footer-subscription">
 				<p className="footer-subscription-heading">
-					Sign Up for Email Updates
+					sign up for email updates
 				</p>
 				<div className="input-areas">
 					<form>
@@ -16,10 +16,10 @@ export default function Footer() {
 							className="footer-input"
 							name="email"
 							type="email"
-							placeholder="Email Address"
+							placeholder="email address"
 						/>
 						<Button buttonStyle="btn--outline">
-							Subscribe
+							subscribe
 						</Button>
 					</form>
 				</div>

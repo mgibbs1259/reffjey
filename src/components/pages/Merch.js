@@ -6,7 +6,7 @@ export default function Merch() {
 	return (
 		<>
 			<MainContainer
-				title="No Merch At This Time"
+				title="no merch at this time"
 				src="/images/100x.jpg"
 				className="main-primary-background-image"
 			/>
