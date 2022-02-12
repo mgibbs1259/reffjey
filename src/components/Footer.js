@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "./Button";
 import "./Footer.css";
 
@@ -11,7 +11,11 @@ export default function Footer() {
 					sign up for email updates
 				</p>
 				<div className="input-areas">
-					<form name="contact" method="post" action="/">
+					<form
+						name="contact"
+						method="post"
+						action={useLocation().pathname}
+					>
 						<input
 							type="hidden"
 							name="form-name"
