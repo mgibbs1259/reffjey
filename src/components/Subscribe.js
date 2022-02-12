@@ -8,7 +8,7 @@ export default function Subscribe() {
 			<div className="subscribe-container">
 				<form
 					name="contact"
-					method="post"
+					method="POST"
 					data-netlify="true"
 					action="/sign-up"
 				>
