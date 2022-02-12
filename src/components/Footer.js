@@ -14,6 +14,7 @@ export default function Footer() {
 					<form
 						name="contact"
 						method="post"
+						onSubmit="submit"
 						action={useLocation().pathname}
 					>
 						<input
