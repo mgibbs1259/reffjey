@@ -6,7 +6,7 @@ export default function Subscribe() {
 	return (
 		<>
 			<div className="subscribe-container">
-				<form name="contact" method="post" action="/subscribe/">
+				<form name="contact" method="post" action="/sign-up/">
 					<input
 						type="hidden"
 						name="form-name"
