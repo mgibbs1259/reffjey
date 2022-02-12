@@ -78,7 +78,11 @@ export default function Navbar() {
 					</li>
 				</ul>
 				{button && (
-					<Button buttonStyle="btn--outline">sign up</Button>
+					<Link to="/sign-up" className="btn-mobile">
+						<Button buttonStyle="btn--outline">
+							sign up
+						</Button>
+					</Link>
 				)}
 			</nav>
 		</>
