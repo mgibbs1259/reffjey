@@ -11,16 +11,25 @@ export default function Footer() {
 					sign up for email updates
 				</p>
 				<div className="input-areas">
-					<form>
+					<form name="contact" method="post" action="/">
 						<input
-							className="footer-input"
-							name="email"
-							type="email"
-							placeholder="email address"
+							type="hidden"
+							name="form-name"
+							value="contact"
 						/>
-						<Button buttonStyle="btn--outline">
-							subscribe
-						</Button>
+						<p>
+							<label>
+								<input
+									type="email"
+									name="email"
+									placeholder="email address"
+									className="footer-input"
+								/>
+							</label>
+							<Button buttonStyle="btn--outline">
+								subscribe
+							</Button>
+						</p>
 					</form>
 				</div>
 			</section>
