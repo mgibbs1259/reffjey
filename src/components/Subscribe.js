@@ -10,7 +10,6 @@ export default function Subscribe() {
 					name="contact"
 					method="post"
 					data-netlify="true"
-					onSubmit="submit"
 					action="/sign-up"
 				>
 					<input

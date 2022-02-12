@@ -15,7 +15,6 @@ export default function Footer() {
 						name="contact"
 						method="post"
 						data-netlify="true"
-						onSubmit="submit"
 						action={useLocation().pathname}
 					>
 						<input
