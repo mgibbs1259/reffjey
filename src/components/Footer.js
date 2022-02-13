@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "./Button";
 import "./Footer.css";
 
@@ -15,7 +15,7 @@ export default function Footer() {
 						name="contact"
 						method="POST"
 						data-netlify="true"
-						action="/music"
+						action={useLocation().pathname}
 					>
 						<input
 							type="hidden"
