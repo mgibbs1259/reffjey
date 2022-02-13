@@ -13,9 +13,9 @@ export default function Footer() {
 				<div className="input-areas">
 					<form
 						name="contact"
-						method="post"
+						method="POST"
 						data-netlify="true"
-						action={useLocation().pathname}
+						action="/"
 					>
 						<input
 							type="hidden"
