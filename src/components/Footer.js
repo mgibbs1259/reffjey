@@ -15,7 +15,7 @@ export default function Footer() {
 						name="contact"
 						method="POST"
 						data-netlify="true"
-						action="/"
+						action="/music"
 					>
 						<input
 							type="hidden"
