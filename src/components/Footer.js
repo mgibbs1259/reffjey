@@ -12,7 +12,7 @@ function encode(data) {
 export default function Footer() {
 	const [state, setState] = useState({})
 
-	handleSubmit = e => {
+	const handleSubmit = e => {
 		fetch("/", {
 		  method: "POST",
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -24,7 +24,7 @@ export default function Footer() {
 		e.preventDefault();
 	  };
 
-	handleChange = e => setState({ [e.target.name]: e.target.value });
+	const handleChange = e => setState({ ...state, [e.target.name]: e.target.value });
 
 	return (
 		<div className="footer-container">
@@ -38,13 +38,13 @@ export default function Footer() {
 						method="POST"
 						data-netlify="true"
 						action={useLocation().pathname}
-						onSubmit={this.handleSubmit}
+						onSubmit={handleSubmit}
 					>
 						<input
 							type="hidden"
 							name="form-name"
 							value="contact"
-							onChange={this.handleChange}
+							onChange={handleChange}
 						/>
 						<p>
 							<label>
@@ -53,7 +53,7 @@ export default function Footer() {
 									name="email"
 									placeholder="email address"
 									className="footer-input"
-									onChange={this.handleChange}
+									onChange={handleChange}
 								/>
 							</label>
 							<Button buttonStyle="btn--outline">

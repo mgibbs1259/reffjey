@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Button.css";
 import "./Subscribe.css";
@@ -12,7 +12,7 @@ function encode(data) {
 export default function Subscribe() {
 	const [state, setState] = useState({})
 
-	handleSubmit = e => {
+	const handleSubmit = e => {
 		fetch("/", {
 		  method: "POST",
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -24,7 +24,7 @@ export default function Subscribe() {
 		e.preventDefault();
 	  };
 
-	handleChange = e => setState({ [e.target.name]: e.target.value });
+	const handleChange = e => setState({  ...state, [e.target.name]: e.target.value });
 
 	return (
 		<>
@@ -34,13 +34,13 @@ export default function Subscribe() {
 					method="POST"
 					data-netlify="true"
 					action={useLocation().pathname}
-					onSubmit={this.handleSubmit}
+					onSubmit={handleSubmit}
 				>
 					<input
 						type="hidden"
 						name="form-name"
 						value="contact"
-						onChange={this.handleChange}
+						onChange={handleChange}
 					/>
 					<p>
 						<label>
@@ -49,7 +49,7 @@ export default function Subscribe() {
 								name="email"
 								placeholder="email address"
 								className="subscribe-input"
-								onChange={this.handleChange}
+								onChange={handleChange}
 							/>
 						</label>
 					</p>
