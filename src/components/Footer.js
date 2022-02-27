@@ -1,9 +1,36 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./Button";
 import "./Footer.css";
 
+function encode(data) {
+	return Object.keys(data)
+	  .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+	  .join('&')
+  }
+  
 export default function Footer() {
+	const [state, setState] = useState({})
+
+	const handleChange = (e) => {
+		setState({ ...state, [e.target.name]: e.target.value })
+	}
+
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		const form = e.target
+		fetch('/', {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+		body: encode({
+			'form-name': form.getAttribute('name'),
+			...state,
+		}),
+		})
+		.then(() => alert('success'))
+		.catch((error) => alert(error))
+	}
+
 	return (
 		<div className="footer-container">
 			<section className="footer-subscription">
@@ -16,11 +43,13 @@ export default function Footer() {
 						method="POST"
 						data-netlify="true"
 						action={useLocation().pathname}
+						onSubmit={handleSubmit}
 					>
 						<input
 							type="hidden"
 							name="form-name"
 							value="contact"
+							onChange={handleChange}
 						/>
 						<p>
 							<label>
@@ -29,6 +58,7 @@ export default function Footer() {
 									name="email"
 									placeholder="email address"
 									className="footer-input"
+									onChange={handleChange}
 								/>
 							</label>
 							<Button buttonStyle="btn--outline">
