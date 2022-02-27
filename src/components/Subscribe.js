@@ -34,13 +34,13 @@ export default function Subscribe() {
 					method="POST"
 					data-netlify="true"
 					action={useLocation().pathname}
-					onSubmit={handleSubmit}
+					onSubmit={this.handleSubmit}
 				>
 					<input
 						type="hidden"
 						name="form-name"
 						value="contact"
-						onChange={handleChange}
+						onChange={this.handleChange}
 					/>
 					<p>
 						<label>
@@ -49,7 +49,7 @@ export default function Subscribe() {
 								name="email"
 								placeholder="email address"
 								className="subscribe-input"
-								onChange={handleChange}
+								onChange={this.handleChange}
 							/>
 						</label>
 					</p>

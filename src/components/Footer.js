@@ -38,13 +38,13 @@ export default function Footer() {
 						method="POST"
 						data-netlify="true"
 						action={useLocation().pathname}
-						onSubmit={handleSubmit}
+						onSubmit={this.handleSubmit}
 					>
 						<input
 							type="hidden"
 							name="form-name"
 							value="contact"
-							onChange={handleChange}
+							onChange={this.handleChange}
 						/>
 						<p>
 							<label>
@@ -53,7 +53,7 @@ export default function Footer() {
 									name="email"
 									placeholder="email address"
 									className="footer-input"
-									onChange={handleChange}
+									onChange={this.handleChange}
 								/>
 							</label>
 							<Button buttonStyle="btn--outline">
