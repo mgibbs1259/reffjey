@@ -23,7 +23,7 @@ export default function Footer() {
 		  .then(() => alert("Thanks for Subscribing!"))
 		  .catch(error => alert(error));
 
-		setState({ ...state, [e.target.name]: "" });
+		setState({ ...state, [e.target.name]: " " });
 	  };
 
 	const handleChange = e => setState({ ...state, [e.target.name]: e.target.value });
