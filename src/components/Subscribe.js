@@ -13,6 +13,8 @@ export default function Subscribe() {
 	const [state, setState] = useState({})
 
 	const handleSubmit = e => {
+		e.preventDefault();
+
 		fetch("/", {
 		  method: "POST",
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -20,8 +22,8 @@ export default function Subscribe() {
 		})
 		  .then(() => alert("Thanks for Subscribing!"))
 		  .catch(error => alert(error));
-  
-		e.preventDefault();
+		  
+		setState({ ...state, [e.target.name]: "" });
 	  };
 
 	const handleChange = e => setState({  ...state, [e.target.name]: e.target.value });
