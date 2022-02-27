@@ -5,31 +5,26 @@ import "./Footer.css";
 
 function encode(data) {
 	return Object.keys(data)
-	  .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-	  .join('&')
+	  .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+	  .join("&")
   }
   
 export default function Footer() {
 	const [state, setState] = useState({})
 
-	const handleChange = (e) => {
-		setState({ ...state, [e.target.name]: e.target.value })
-	}
-
-	const handleSubmit = (e) => {
-		e.preventDefault()
-		const form = e.target
-		fetch('/', {
-		method: 'POST',
-		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-		body: encode({
-			'form-name': form.getAttribute('name'),
-			...state,
-		}),
+	handleSubmit = e => {
+		fetch("/", {
+		  method: "POST",
+		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+		  body: encode({ "form-name": "contact", ...state })
 		})
-		.then(() => alert('success'))
-		.catch((error) => alert(error))
-	}
+		  .then(() => alert("Thanks for Subscribing!"))
+		  .catch(error => alert(error));
+  
+		e.preventDefault();
+	  };
+
+	handleChange = e => setState({ [e.target.name]: e.target.value });
 
 	return (
 		<div className="footer-container">
