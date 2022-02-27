@@ -16,10 +16,6 @@ export default function Footer() {
 						method="POST"
 						data-netlify="true"
 						action={useLocation().pathname}
-						onSubmit={(e) => {
-							e.preventDefault();
-							console.log("submitted");
-						}}
 					>
 						<input
 							type="hidden"
