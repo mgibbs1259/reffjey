@@ -22,8 +22,6 @@ export default function Subscribe() {
 		})
 		  .then(() => alert("Thanks for Subscribing!"))
 		  .catch(error => alert(error));
-		  
-		setState({ ...state, [e.target.name]: " " });
 	  };
 
 	const handleChange = e => setState({  ...state, [e.target.name]: e.target.value });
