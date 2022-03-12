@@ -1,30 +1,36 @@
-import React, {useState} from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Button } from "./Button";
 import "./Footer.css";
 
 function encode(data) {
 	return Object.keys(data)
-	  .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-	  .join("&")
-  }
-  
-export default function Footer() {
-	const [state, setState] = useState({})
+		.map(
+			(key) =>
+				encodeURIComponent(key) +
+				"=" +
+				encodeURIComponent(data[key])
+		)
+		.join("&");
+}
 
-	const handleSubmit = e => {
+export default function Footer() {
+	const [state, setState] = useState({});
+
+	const handleSubmit = (e) => {
 		e.preventDefault();
 
 		fetch("/", {
-		  method: "POST",
-		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
-		  body: encode({ "form-name": "contact", ...state })
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: encode({ "form-name": "contact", ...state }),
 		})
-		  .then(() => alert("Thanks for Subscribing!"))
-		  .catch(error => alert(error));
-	  };
+			.then(() => alert("Thanks for Subscribing!"))
+			.catch((error) => alert(error));
+	};
 
-	const handleChange = e => setState({ ...state, [e.target.name]: e.target.value });
+	const handleChange = (e) =>
+		setState({ ...state, [e.target.name]: e.target.value });
 
 	return (
 		<div className="footer-container">
@@ -63,7 +69,7 @@ export default function Footer() {
 					</form>
 				</div>
 			</section>
-			<section className="social-media">
+			<section className="content">
 				<div className="social-media-wrap">
 					<div className="social-icons">
 						<a
@@ -105,16 +111,19 @@ export default function Footer() {
 					</div>
 				</div>
 			</section>
-			<section className="social-media">
-				<div className="social-media-wrap">
-					<div className="footer-logo">
-						<Link to="/" className="social-logo">
-							reffjey
-						</Link>
-					</div>
+			<section className="content">
+				<div className="copyright-wrap">
 					<div className="website-rights">
 						REFFJEY © {new Date().getFullYear()}
 					</div>
+				</div>
+				<div className="privacy-policy-wrap">
+					<a
+						href="privacy-policy.html"
+						className="website-rights"
+					>
+						Privacy Policy
+					</a>
 				</div>
 			</section>
 		</div>
