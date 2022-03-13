@@ -119,7 +119,7 @@ export default function Footer() {
 				</div>
 				<div className="privacy-policy-wrap">
 					<a
-						href="privacy-policy.html"
+						href="https://rawcdn.githack.com/mgibbs1259/reffjey/1e3a09ebaff788040175e5fae710cd5b0f8c4499/public/privacy-policy.html"
 						className="website-rights"
 					>
 						Privacy Policy
