@@ -38,33 +38,40 @@ export default function PastMusic() {
 				<div className="cards__wrapper">
 					<ul className="cards__items">
 						<CardItem
+							href="https://open.spotify.com/album/1IUskJhiDaVZhACO8xSfgi?si=tOsu7RTRQwyHz1TWO-esyA"
+							src="/images/malenia.jpg"
+						/>
+						<CardItem
 							href="https://open.spotify.com/album/5LiS0sYeOXXOZAbYj47WwJ?si=oJeGUITVSx-ftDj304Jgww"
 							src="/images/the-beautiful-sound-of-anything-small.jpg"
 						/>
+					</ul>
+					<ul className="cards__items">
 						<CardItem
 							href="https://open.spotify.com/album/6olAOVju1Q07eS4kT9m7af?si=kRNcWEgqSEW7j3mS1sQgnQ"
 							src="/images/100x.jpg"
 						/>
-					</ul>
-					<ul className="cards__items">
 						<CardItem
 							href="https://open.spotify.com/album/63bhHGgeOROPbyNP1QJphD?si=xReVx3BDTbWhQZEPdkofDg"
 							src="/images/laurels.jpg"
 						/>
+					</ul>
+					<ul className="cards__items">
 						<CardItem
 							href="https://open.spotify.com/album/7ciqWbpuVRaSaGGqCFoJs0?si=kM1aKyRUQPSBqBQkXHEy7w"
 							src="/images/stickerbrush-symphony.jpg"
 						/>
-					</ul>
-					<ul className="cards__items">
 						<CardItem
 							href="https://open.spotify.com/album/3DSZuzNGyjQjs5FcgsdKHj?si=rYTEaXVEQuio9881mKJOGw"
 							src="/images/morning-song.jpg"
 						/>
+					</ul>
+					<ul className="cards__items">
 						<CardItem
 							href="https://open.spotify.com/album/1myEMmo8lrNRn7gyKCb5YS?si=013gZe5CQIqJBlwOd3mE_g"
 							src="/images/alive-again.jpg"
 						/>
+						<CardItem href="" src="" />
 					</ul>
 				</div>
 			</div>
