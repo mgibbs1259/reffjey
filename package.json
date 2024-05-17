@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aws-xray-sdk": "^3.3.4",
     "file-loader": "^6.2.0",
-    "follow-redirects": ">=1.14.8",
+    "follow-redirects": ">=1.15.6",
     "framer-motion": "^6.2.1",
     "imagesloaded": "^4.1.4",
     "isomorphic-fetch": "^1.7.0",
